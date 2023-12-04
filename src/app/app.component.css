@@ -1,0 +1,108 @@
+@import '~swiper/css';
+@import '~swiper/css/navigation';
+@import '~swiper/css/pagination';
+@import '~swiper/css/effect-cube';
+@import '~swiper/css/effect-coverflow';
+
+
+.slider-effectCoverflow {
+  width: 95%;
+  height: 250px;
+  margin: 10px auto;
+}
+
+.slider-effectCoverflow .swiper {
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.slider-effectCoverflow .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 170px;
+}
+
+.slider-effectCoverflow .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+.slider-effectCoverflow .swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  opacity: 50%;
+}
+
+.slider-effectCoverflow .swiper-pagination-bullet-active {
+  background-color: transparent;
+}
+
+.slider-effectCoverflow .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.slider-effectCoverflow .slider-button-next:after, .slider-button-prev:after {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* TESTED */
+.slider-cube {
+  margin-top: 190px;
+  position: relative;
+}
+
+.slider-cube .swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.slider-cube .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-cube .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+
+.slider-cube .swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  opacity: 50%;
+}
+
+.slider-cube .swiper-pagination-bullet-active {
+  background-color: transparent;
+}
+
+.slider-cube .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.slider-cube .slider-button-next:after, .slider-button-prev:after {
+  font-size: 15px;
+  font-weight: bold;
+}
+

@@ -1,0 +1,74 @@
+.title{
+  color: #ffffff;
+  font-family: cursive;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-top: 5rem;
+}
+
+.subtitle{
+  color: #ffffff;
+  font-family: cursive;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 2rem;
+}
+
+.container-global{
+  background-image: url('../../../../assets/wpp.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.btnEdit {
+  width: 80%;
+  padding: 1rem;
+  background-color: #69c2ef;
+  color: white;
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  transition: transform 1s;
+}
+
+.btnEdit:active {
+  background-color: #B8E5FC;
+  color: white;
+  transform: scale(1.1);
+}
+
+.img-wpp{
+  color: white;
+}
+
+.spinnerW{
+  margin-top: 6rem;
+  width: 150px;
+  height: 150px;
+}
+.subtitle2{
+  color: #ffffff;
+  font-family: cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.btnRedimir{
+  text-align: center;
+  width: 90%;
+  padding: 1rem;
+  background-color: #69c2ef;
+  color: white;
+  font-family: cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  transition: transform 1s;
+  margin-top: 10rem;
+}
+
+.btnRedimir:active {
+  background-color: #B8E5FC;
+  color: white;
+  transform: scale(1.1);
+}

@@ -1,0 +1,105 @@
+<div *ngIf="this.flag1 == true" class="container-fluid container-global p-0 d-flex flex-column" style="height: 100vh;">
+  <div class="container p-1 d-flex flex-column align-items-center justify-content-between">
+
+    <div>
+      <h1 class="title text-center">Bienvenida!</h1>
+      <h4 class="subtitle2 text-center">"La vida no es perfecta, pero que tus uñas si "</h4>
+    </div>
+
+      <div class="slider-cube">
+        <swiper
+          [effect]="'cube'"
+          [grabCursor]="true"
+          [cubeEffect]="{
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94
+          }"
+          [pagination]="true"
+          [navigation]="true"
+          [loop]="true"
+          class="mySwiper"
+        >
+          <ng-template swiperSlide><img src="../assets/logoCubo.JPG"></ng-template>
+          <ng-template swiperSlide><img src="../assets/spacubo1.jpg"></ng-template>
+          <ng-template swiperSlide><img src="../assets/spacubo2.jpg"></ng-template>
+          <ng-template swiperSlide><img src="../assets/spacubo3.jpg"></ng-template>
+        </swiper>
+      </div>
+
+    <button  class="btn btnRedimir" (click)="redimirCupon()">
+      Redimir cupon <i class="bi bi-arrow-right"></i>
+    </button>
+  </div>
+</div>
+
+
+
+
+<div *ngIf="this.flag2 ==true" class="container-fluid container-global p-0 d-flex flex-column" style="height: 100vh;">
+  <div class="container p-1 d-flex flex-column align-items-center justify-content-between">
+    <div>
+      <h1 class="title text-center">Bienvenida!</h1>
+      <h4 class="subtitle2 text-center"> Nataly Nails</h4>
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border text-info spinnerW" role="status">
+          <span class="sr-only"></span>
+        </div>
+        <!-- <div class="spinner-grow text-info spinnerW" role="status">
+          <span class="sr-only"></span>
+        </div> -->
+      </div>
+      <!-- <img src="../../../../assets/logo.jpeg" alt=""> -->
+      <p class="subtitle text-center">Validando Cupon ....</p>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="this.flag3 == true" class="container-fluid container-global p-0 d-flex flex-column" style="height: 100vh;">
+  <div class="container p-1 d-flex flex-column align-items-center justify-content-between">
+
+    <div>
+      <h1 class="title text-center">Felicidades!</h1>
+      <p class="subtitle text-center">Con este cupon haz ganado un descuento en tus próximas uñas</p>
+    </div>
+
+    <div class="slider-effectCoverflow">
+      <swiper
+        [effect]="'coverflow'"
+        [grabCursor]="true"
+        [centeredSlides]="true"
+        [slidesPerView]="'auto'"
+        [coverflowEffect]="{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        }"
+        [pagination]="true"
+        [navigation]="true"
+        [initialSlide]="1"
+        [loop]="true"
+        [autoplay]="{
+          delay: 1000,
+          disableOnInteraction: false
+        }"
+        class="mySwiper"
+      >
+        <ng-template swiperSlide><img src="../assets/una1.jpeg"></ng-template>
+        <ng-template swiperSlide><img src="../assets/una4.jpeg"></ng-template>
+        <ng-template swiperSlide><img src="../assets/una2.jpeg"></ng-template>
+        <ng-template swiperSlide><img src="../assets/una5.jpeg"></ng-template>
+        <ng-template swiperSlide><img src="../assets/una3.jpeg"></ng-template>
+        <ng-template swiperSlide><img src="../assets/una6.jpeg"></ng-template>
+      </swiper>
+    </div>
+    <a href="https://wa.link/nmw76z" class="btn btnEdit">
+     Obtener Descuento   <i class="bi bi-whatsapp"></i>
+   </a>
+  </div>
+</div>
+
+
